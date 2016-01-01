@@ -6,3 +6,7 @@ deployment:
       branch: master
       heroku:
          appname: study000
+test:
+   override:
+      - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
+      - phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml tests
