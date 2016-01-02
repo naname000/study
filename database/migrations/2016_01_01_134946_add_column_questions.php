@@ -14,7 +14,7 @@ class AddColumnQuestions extends Migration
     {
         Schema::table('questions', function (Blueprint $table) {
             $table->integer('order', false, true);
-            $table->integer('choise_amount', false, true);
+            $table->integer('choice_amount', false, true);
         });
     }
 
@@ -27,7 +27,7 @@ class AddColumnQuestions extends Migration
     {
         Schema::table('questions', function (Blueprint $table) {
             $table->dropColumn('order');
-            $table->dropColumn('choise_amount');
+            $table->dropColumn('choice_amount');
         });
     }
 }

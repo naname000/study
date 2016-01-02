@@ -30,3 +30,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::auth();
     Route::get('/home', 'HomeController@index');
 });
+
+//Route::get('/exams/{slug}', 'ExamsController@getExamBySlug');
+Route::get('/exams/{slug}', 'ExamsController@showJson');

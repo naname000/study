@@ -161,6 +161,10 @@ return [
          */
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
+        // laravel5でドメイン駆動設計
+        // http://niiyz.com/blog/2015/10/24/laravel5%E3%81%A7%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%A7%86%E5%8B%95%E8%A8%AD%E8%A8%88/
+        App\Providers\RepositoryProvider::class,
+
     ],
 
     /*
