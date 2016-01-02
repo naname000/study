@@ -12,7 +12,7 @@ class ExamControllerTest extends TestCase
 {
     use DatabaseTransactions;
 
-    public function testGetExamBySlug()
+    public function testGetExamJsonBySlug()
     {
         $exam = factory(\App\Exam::class)->create();
         $this->visit('/exams/' . $exam->slug)->seeJson();
