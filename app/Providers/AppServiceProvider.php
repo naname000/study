@@ -2,8 +2,6 @@
 
 namespace App\Providers;
 
-use App\Services\ExamService;
-use App\Services\ExamServiceInterface;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -25,6 +23,5 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(ExamServiceInterface::class, ExamService::class);
     }
 }
