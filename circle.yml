@@ -8,6 +8,11 @@ machine:
       DB_USERNAME: ubuntu
       DB_PASSWORD:
 
+dependencies:
+   post:
+      - php artisan migrate --force
+
+
 deployment:
    staging:
       branch: master
