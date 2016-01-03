@@ -13,11 +13,32 @@ use Illuminate\Http\Request;
 
 class ExamsController extends Controller
 {
+
+    /**
+     * @var Exam
+     */
+    protected $exam;
+
+    /**
+     * ExamsController constructor.
+     * @param $exam
+     */
+    public function __construct(Exam $exam)
+    {
+        $this->exam = $exam;
+    }
+
+
     public function showJson(Exam $exam) {
         $json = [
             'EXAM' => $exam->toArray(),
             'QUESTIONS' => $exam->questions->toArray()
         ];
         return response()->json($json);
+    }
+
+    public function index() {
+        $exams = $this->exam->all();
+        return view('exams.index')->with(compact('exams'));
     }
 }

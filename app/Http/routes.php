@@ -33,3 +33,4 @@ Route::group(['middleware' => 'web'], function () {
 
 //Route::get('/exams/{slug}', 'ExamsController@getExamBySlug');
 Route::get('/exams/{slug}', 'ExamsController@showJson');
+Route::resource('/exams', 'ExamsController@index');
