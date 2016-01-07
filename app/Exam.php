@@ -25,7 +25,7 @@ class Exam extends Model
 
     protected $fillable = array('title');
 
-    protected $visible = ['title'];
+    protected $visible = ['id', 'title'];
 
     public function questions()
     {

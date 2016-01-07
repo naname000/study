@@ -27,9 +27,3 @@ $factory->define(\App\Exam::class, function (\Faker\Generator $faker) {
         'slug' => 'denken3syu-riron-H' . $rand
     ];
 });
-
-$factory->define(\App\Question::class, function (\Faker\Generator $faker) {
-    return [
-        'statement_image_path' => 'undefined',
-    ];
-});

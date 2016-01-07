@@ -14,7 +14,7 @@
             <tr>
                 <td>{{ $exam->title }}</td>
                 <td>
-                    <a href="{{ URL::to('/exams/'.$exam->slug) }}">getJson</a>
+                    <a href="{{ URL::to('/exams/getJson/'.$exam->slug) }}">getJson</a>
                 </td>
             </tr>
         @endforeach

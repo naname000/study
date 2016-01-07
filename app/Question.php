@@ -14,13 +14,15 @@ use Illuminate\Database\Eloquent\Model;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property integer $order
- * @property integer $choise_amount
  * @property-read \App\Exam $exam
+ * @property integer $choice_amount
+ * @property integer $answer
+ * @property integer $point
  */
 class Question extends Model
 {
 
-    protected $visible = ['order', 'choise_amount'];
+    protected $visible = ['order', 'choice_amount'];
 
     public function exam()
     {

@@ -31,6 +31,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/home', 'HomeController@index');
 });
 
-//Route::get('/exams/{slug}', 'ExamsController@getExamBySlug');
-Route::get('/exams/{slug}', 'ExamsController@showJson');
-Route::resource('/exams', 'ExamsController@index');
+Route::get('/exams/getJson/{slug}', 'ExamsController@showJson');
+Route::post('/exams/score/', 'ExamsController@score');
+Route::get('/exams', 'ExamsController@index');
