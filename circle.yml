@@ -10,7 +10,7 @@ machine:
 
 dependencies:
    post:
-      - php artisan migrate --force
+      - php artisan migrate --force --seed
 
 
 deployment:
