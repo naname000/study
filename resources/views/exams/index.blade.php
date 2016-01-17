@@ -1,23 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2 class="page-header">過去問一覧</h2>
-    <table class="table table-striped table-hover">
-        <thead>
-        <tr>
-            <th>タイトル</th>
-            <th>Actions</th>
-        </tr>
-        </thead>
-        <tbody>
+    <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title">過去問一覧</h3></div>
+        <!--<table class="table table-striped table-hover">-->
+        <table class="table">
+            <thead>
+            <tr>
+                <th>タイトル</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
         @foreach($exams as $exam)
             <tr>
                 <td>{{ $exam->title }}</td>
                 <td>
-                    <a href="{{ URL::to('/exams/getJson/'.$exam->slug) }}">getJson</a>
+                    <a href="{{ URL::to('/exams/getJson/'.$exam->slug) }}">json</a>
                 </td>
             </tr>
         @endforeach
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
 @endsection
