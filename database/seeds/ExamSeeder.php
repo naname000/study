@@ -7,7 +7,7 @@ class ExamSeeder extends Seeder
     const DEFAULT_SEED_CHOICE_AMOUNT = 5;
     const DEFAULT_SEED_RAND_POINT = 3;
     /**
-     * Run the database seeds.
+     * データベース初期値設定実行
      *
      * @return void
      */

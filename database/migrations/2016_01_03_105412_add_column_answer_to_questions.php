@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 class AddColumnAnswerToQuestions extends Migration
 {
     /**
-     * Run the migrations.
+     * マイグレーション実行
      *
      * @return void
      */
@@ -18,7 +18,7 @@ class AddColumnAnswerToQuestions extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * マイグレーションを戻す
      *
      * @return void
      */

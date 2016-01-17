@@ -2,12 +2,12 @@
 
 /*
 |--------------------------------------------------------------------------
-| Routes File
+| ルートファイル
 |--------------------------------------------------------------------------
 |
-| Here is where you will register all of the routes in an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
+| ここでアプリケーションのルートを全て登録してください。
+| 簡単です。ただ、Laravelへ対応するURIと、そのURIがリクエスト
+| されたときに呼び出されるコントローラーを指定してください。
 |
 */
 
@@ -17,12 +17,12 @@ Route::get('/', function () {
 
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| アプリケーションのルート
 |--------------------------------------------------------------------------
 |
-| This route group applies the "web" middleware group to every route
-| it contains. The "web" middleware group is defined in your HTTP
-| kernel and includes session state, CSRF protection, and more.
+| このルートグループは、"web"ミドルウェアグループが指定された
+| 全ルートに対し適用されます。"web"ミドルウェアグループは
+| HTTPカーネルで定義されており、セッションの開始やCSRF保護などを含んでいます。
 |
 */
 

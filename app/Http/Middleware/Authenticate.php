@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 class Authenticate
 {
     /**
-     * Handle an incoming request.
+     * 送られてきたリクエストの処理
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next

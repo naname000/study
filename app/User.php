@@ -18,7 +18,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     /**
-     * The attributes that are mass assignable.
+     * 複数代入を行う属性
      *
      * @var array
      */
@@ -27,7 +27,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * The attributes excluded from the model's JSON form.
+     * モデルのJSON形式に含めない属性
      *
      * @var array
      */

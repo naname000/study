@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 class CreateQuestionsTable extends Migration
 {
     /**
-     * Run the migrations.
+     * マイグレーション実行
      *
      * @return void
      */
@@ -24,7 +24,7 @@ class CreateQuestionsTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * マイグレーションを戻す
      *
      * @return void
      */

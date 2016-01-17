@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     /**
-     * Create a new controller instance.
+     * 新しいコントローラーインスタンスの生成
      *
      * @return void
      */
